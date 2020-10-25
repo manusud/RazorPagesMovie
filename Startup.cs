@@ -13,10 +13,14 @@ using RazorPagesMovie.Data;
 
 namespace RazorPagesMovie
 {
+
+
     public class Startup
     {
+
+
         public Startup(IConfiguration configuration)
-        {
+        {          
             Configuration = configuration;
         }
 
@@ -34,6 +38,8 @@ namespace RazorPagesMovie
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // app.UseRequestLocalization("en-UY", "pt-BR");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
